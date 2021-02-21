@@ -192,7 +192,9 @@ h2 {
 }
 
 /* Tablet */
-@media screen and (max-width: 880px) {
+/* @media screen and (max-width: 880px) { */
+@media screen and (max-width: 1024px) {
+
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -204,7 +206,7 @@ h2 {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .nav-right-side-container {
+  .logo {
     display: none;
   } 
 
