@@ -187,19 +187,28 @@ h2 {
   margin-bottom: 4px;
 }
 
+.hidden {
+  display: none;
+}
+
 /* Tablet */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 880px) {
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
-    /* grid-gap: 15px;
-    margin-right: 0;
-    padding-right: 0; */
   }
 }
 
-Mobile */
-@media screen and (max-width: 500px) {
+/* Mobile  */
+@media screen and (max-width: 570px) {
   .grid-container {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .nav-right-side-container {
+    display: none;
+  } 
+
+  .navText {
+    display: none;
   }
 }
