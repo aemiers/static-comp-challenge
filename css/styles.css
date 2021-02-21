@@ -1,7 +1,7 @@
 /* General */
-*, *:before, *:after {
+/* *, *:before, *:after {
   box-sizing: inherit;
-}
+} */
 
 html {
   box-sizing: border-box;
@@ -9,12 +9,24 @@ html {
   height: 100%;
 }
 
+/* Typography */
 body {
   font-family: 'Roboto', sans-serif;
 }
 
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px 0 30px 0; 
+}
+
+h2 {
+  font-size: 12px;
+}
+
 /* Margins */
-.all-nav-container {
+.all-nav-container, 
+.card-container {
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 20px;
@@ -22,7 +34,8 @@ body {
 
 /* Navigation */
 header { 
-  background-color: #272727
+  background-color: #272727;
+  /* max-height: 150px; */
 }
 
 .navText {
@@ -68,26 +81,108 @@ header {
   align-items: flex-end;
 }
 
-/* .nav-admin-container {
-  align-items: flex-end;
-} */
-
 /* Main */
 main {
   background-color: #eeeeef;
+  padding: 20px;
 }
 
 /* Grid */
 .grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 35px;
+  grid-gap: 15px;
+  margin-right: 0;
+  padding-right: 0;
 }
 
-  /* grid-row-gap: 60px;
-  padding: 20px; */
 /* Cards */
 
 .card {
-  background-color: pink;
+  background-color: white;
+  box-shadow: 5px 3px 8px grey;
+}
+
+.top-half-card-container {
+  position: relative;
+  top: 0;
+  left: 0;
+  background: black;
+}
+
+figure {
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  margin: 0;
+}
+
+.adventure-image {
+  display: block;
+  width: 100%;
+  opacity: .6;
+}
+
+figure img {
+  margin: -4.875% 0;
+}
+
+.reply-icon {
+  width: 60px;
+  transform: scaleX(-1);
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.views-pic-right-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  text-align: justify;
+}
+
+.views, 
+.number {
+  color: white;
+}
+
+.number {
+  font-size: 30px;
+}
+
+/* Bottom Half Card */
+.bottom-half-card-container {
+  height: 200px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.location-date-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.date, 
+.link {
+  font-size: 12px;
+}
+
+.link {
+  background-color: #eeeeef;
+  padding: 5px;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+.bottom-number {
+  color: #66c9fe
+}
+
+span, 
+h2 {
+  margin-bottom: 4px;
 }
