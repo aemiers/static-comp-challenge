@@ -68,6 +68,23 @@ header {
   align-items: flex-end;
 }
 
-.nav
+/* Main */
+main {
+  background-color: #eeeeef;
+}
 
+/* Grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 35px;
 
+}
+
+  /* grid-row-gap: 60px;
+  padding: 20px; */
+/* Cards */
+
+.card {
+  background-color: pink;
+}
