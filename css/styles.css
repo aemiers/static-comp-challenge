@@ -81,7 +81,7 @@ header {
   align-items: flex-end;
 }
 
-/* Main */
+/* Main Background */
 main {
   background-color: #eeeeef;
   padding: 20px;
@@ -96,7 +96,7 @@ main {
   padding-right: 0;
 }
 
-/* Cards */
+/* Top Half Card */
 
 .card {
   background-color: white;
@@ -185,4 +185,21 @@ figure img {
 span, 
 h2 {
   margin-bottom: 4px;
+}
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-gap: 15px;
+    margin-right: 0;
+    padding-right: 0; */
+  }
+}
+
+Mobile */
+@media screen and (max-width: 500px) {
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
